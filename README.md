@@ -1,12 +1,18 @@
 # Svelte Library Template
 
-## Why
+## Why did I make this?
 
 As I was working on the @tanstack/svelte-query adapter, there were several ways to bundle and release Svelte packages. These are the two extremes I saw:
 
-1. Many older packages still used a custom Rollup setup to bundle their code, however often has issues as it compiles `.svelte` files to `.js` rather than leaving that to the end user's app build.
-2. The Svelte team recommended using `svelte-package` alongside the entirety of SvelteKit; this works great, but requires you to run `svelte-kit sync`, and you shouldn't need an entire metaframework to build a library.
+1. Many older packages still used a custom Rollup setup to bundle their code; however this often has issues as it compiles `.svelte` files to `.js` rather than leaving that to the end user's app build.
+2. The Svelte team recommended using `svelte-package` alongside the entirety of SvelteKit; this works well, but requires you to run `svelte-kit sync`, and you don't always need an entire metaframework to build a library.
 
-## What
+## What does this offer?
 
-I realised that the `svelte-package` only actually needed the vite plugin. This approach of using `svelte-package` without requiring SvelteKit was the most ergonomic (no `tsconfig.json` syncing) and future-proof (ESM, preserving `.svelte` files) solution I could find.
+The `svelte-package` only actually needs the Vite plugin. This approach of using `svelte-package` without requiring SvelteKit was the most ergonomic (no `tsconfig.json` syncing) and future-proof (ESM, preserving `.svelte` files) solution I could find.
+
+It also comes with some other goodies out-of-the-box, including TypeScript, Prettier, ESLint, and Vitest. These are all checked when `pnpm lint` is run. The provided `.github/workflows/pr.yaml` will run this automatically on PRs.
+
+## Limitations
+
+If you want to be able to visualise your code as you develop (e.g. UI components), you are probably better off using the SvelteKit/svelte-package combination. However, if your library is not visual and can be more reliably checked with tests, this template may be more appropriate.
