@@ -9,10 +9,20 @@ As I was working on the [TanStack Query Svelte adapter](https://github.com/TanSt
 
 ## What does this offer?
 
-The `svelte-package` only actually needs the Vite plugin. This approach of using `svelte-package` without requiring SvelteKit was the most ergonomic (no `tsconfig.json` syncing) and future-proof (ESM, preserving `.svelte` files) solution I could find.
+The `svelte-package` only actually needs `@sveltejs/vite-plugin-svelte`. This approach of using `svelte-package` without requiring SvelteKit was the most ergonomic (no `tsconfig.json` syncing) and future-proof (ESM, preserving `.svelte` files) solution I could find.
 
-It also comes with some other goodies out-of-the-box, including TypeScript, Prettier, ESLint, and Vitest. These are all checked when `pnpm lint` is run. The provided `.github/workflows/pr.yaml` will run this automatically on PRs.
+It also comes with some other goodies out-of-the-box, including TypeScript, Prettier, ESLint, Vitest, and Publint.
 
 ## Limitations
 
 If you want to be able to visualise your code as you develop (e.g. UI components), or plan to use SvelteKit-specific utils, you are probably better off using the SvelteKit/svelte-package combination. However, if your library can be reliably checked with tests, this template may be more appropriate.
+
+## Usage
+
+If starting a new library, you can simply select "Use This Template" to create a copy of the repo. If you have an existing library, you can selectively choose which parts of this template to use - I would strongly suggest at least using `svelte-package` and `@sveltejs/vite-plugin-svelte` for build, and the `package.json` exports config.
+
+You can test Prettier, ESLint, TS, and Vitest by running `pnpm lint`. You can test build and Publint by running `pnpm build`. The provided `.github/workflows/pr.yaml` will run these automatically on PRs.
+
+## Suggestions
+
+If you have any ideas or improvements, please feel free to contribute either a PR or write an issue!
