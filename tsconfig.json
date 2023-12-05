@@ -26,14 +26,5 @@
 		"strictNullChecks": true,
 		"target": "ES2022"
 	},
-	"include": [
-		"src/**/*.js",
-		"src/**/*.ts",
-		"src/**/*.svelte",
-		".eslintrc.cjs",
-		"prettier.config.js",
-		"svelte.config.js",
-		"test-setup.ts",
-		"vite.config.ts"
-	]
+	"include": ["**/*.js", "**/*.ts", "**/*.svelte", ".eslintrc.cjs"]
 }

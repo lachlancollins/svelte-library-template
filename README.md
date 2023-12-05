@@ -19,7 +19,7 @@ If you want to be able to visualise your code as you develop (e.g. UI components
 
 ## Usage
 
-If starting a new library, you can simply select "Use This Template" to create a copy of the repo. If you have an existing library, you can selectively choose which parts of this template to use - I would strongly suggest at least using `svelte-package` and `@sveltejs/vite-plugin-svelte` for build, and the `package.json` exports config.
+If starting a new library, you can simply select "Use This Template" to create a copy of the repo. Feel free to remove any tools you do not wish to use. If you have an existing library, you can selectively choose which parts of this template to use - I would strongly suggest at least using `svelte-package` and `@sveltejs/vite-plugin-svelte` for build, and the `package.json` exports config.
 
 You can test Prettier, ESLint, TS, and Vitest by running `pnpm lint`. You can test build and Publint by running `pnpm build`. The provided `.github/workflows/pr.yaml` will run these automatically on PRs.
 

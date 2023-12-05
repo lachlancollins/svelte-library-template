@@ -5,7 +5,7 @@ export default defineConfig({
 	plugins: [svelte()],
 	test: {
 		watch: false,
-		include: ["src/__tests__/**/*.{test,spec}.{js,ts}"],
-		setupFiles: ["test-setup.ts"],
+		include: ["tests/**/*.{test,spec}.{js,ts}"],
+		setupFiles: ["tests/setup.ts"],
 	},
 });
