@@ -20,7 +20,7 @@
 	"scripts": {
 		"lint": "prettier --check '**/*' --ignore-unknown && eslint . && svelte-check --tsconfig ./tsconfig.json && vitest",
 		"format": "prettier --write '**/*' --ignore-unknown",
-		"build": "svelte-package --input ./src --output ./dist && publint --strict"
+		"build": "svelte-package --input ./src && publint --strict"
 	},
 	"devDependencies": {
 		"@sveltejs/package": "^2.2.4",

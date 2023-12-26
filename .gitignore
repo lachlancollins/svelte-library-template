@@ -8,11 +8,11 @@ yarn.lock
 
 # builds
 types
-*/**/.svelte-kit
-*/**/build
-*/**/dist
-*/**/lib
-*/**/es
+**/.svelte-kit
+**/build
+**/dist
+**/lib
+**/es
 artifacts
 .rpt2_cache
 coverage
