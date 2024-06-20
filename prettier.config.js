@@ -8,7 +8,7 @@ const config = {
 	singleQuote: false,
 	tabWidth: 4,
 	useTabs: true,
-	plugins: ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+	plugins: ["prettier-plugin-svelte"],
 	overrides: [{ files: "*.svelte", options: { parser: "svelte" } }],
 };
 
