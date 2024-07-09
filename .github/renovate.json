@@ -1,6 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:recommended", "schedule:weekly", ":disablePeerDependencies", ":semanticCommitTypeAll(chore)"],
+	"extends": [
+		"config:recommended",
+		"schedule:weekly",
+		":approveMajorUpdates",
+		":disablePeerDependencies",
+		":semanticCommitTypeAll(chore)"
+	],
 	"labels": ["dependencies"],
 	"rangeStrategy": "bump",
 	"semanticCommits": "enabled",
