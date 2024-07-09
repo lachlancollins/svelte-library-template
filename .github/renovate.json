@@ -1,6 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:recommended", "schedule:weekly", ":disablePeerDependencies", ":semanticCommitTypeAll(chore)"],
+	"extends": ["config:recommended", "schedule:weekly", ":semanticCommitTypeAll(chore)"],
 	"labels": ["dependencies"],
 	"rangeStrategy": "bump",
 	"semanticCommits": "enabled",
@@ -10,6 +10,10 @@
 			"groupSlug": "all-minor-patch",
 			"matchCurrentVersion": ">=1.0.0",
 			"matchUpdateTypes": ["minor", "patch"]
+		},
+		{
+			"matchDepTypes": ["peerDependencies", "engines"],
+			"enabled": false
 		}
 	]
 }
