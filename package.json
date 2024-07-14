@@ -18,8 +18,8 @@
 		"src"
 	],
 	"scripts": {
-		"lint": "prettier --check '**/*' --ignore-unknown && eslint . && svelte-check --tsconfig ./tsconfig.json && vitest",
-		"format": "prettier --write '**/*' --ignore-unknown",
+		"lint": "prettier --check . --ignore-unknown && eslint . && svelte-check --tsconfig ./tsconfig.json && vitest",
+		"format": "prettier --write . --ignore-unknown",
 		"build": "svelte-package --input ./src && publint --strict"
 	},
 	"devDependencies": {
