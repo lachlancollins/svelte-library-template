@@ -1,9 +1,7 @@
-name: PR
+name: Test
 
 on:
   pull_request:
-    branches:
-      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
@@ -11,15 +9,15 @@ concurrency:
 
 jobs:
   test:
-    name: PR
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v4.0.0
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.0.3
         with:
           node-version-file: .nvmrc
           cache: "pnpm"
