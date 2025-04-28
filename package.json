@@ -2,7 +2,7 @@
 	"name": "svelte-library-template",
 	"version": "1.0.0",
 	"description": "Insert description here",
-	"packageManager": "pnpm@10.8.1",
+	"packageManager": "pnpm@10.10.0",
 	"type": "module",
 	"types": "dist/index.d.ts",
 	"svelte": "./dist/index.js",
@@ -23,24 +23,24 @@
 		"build": "svelte-package --input ./src && publint --strict"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.25.0",
+		"@eslint/js": "^9.25.1",
 		"@sveltejs/package": "^2.3.11",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.7",
-		"eslint": "^9.25.0",
+		"eslint": "^9.25.1",
 		"eslint-plugin-svelte": "^3.5.1",
 		"globals": "^16.0.0",
 		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.3.3",
 		"publint": "^0.3.12",
-		"svelte": "^5.28.1",
+		"svelte": "^5.28.2",
 		"svelte-check": "^4.1.6",
 		"svelte-eslint-parser": "^1.1.3",
 		"typescript": "^5.8.3",
-		"typescript-eslint": "^8.30.1",
-		"vite": "^6.3.2",
-		"vitest": "^3.1.1"
+		"typescript-eslint": "^8.31.0",
+		"vite": "^6.3.3",
+		"vitest": "^3.1.2"
 	},
 	"peerDependencies": {
 		"svelte": "^5.0.0"
