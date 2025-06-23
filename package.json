@@ -2,7 +2,7 @@
 	"name": "svelte-library-template",
 	"version": "1.0.0",
 	"description": "Insert description here",
-	"packageManager": "pnpm@10.12.1",
+	"packageManager": "pnpm@10.12.2",
 	"type": "module",
 	"types": "dist/index.d.ts",
 	"svelte": "./dist/index.js",
@@ -29,18 +29,18 @@
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.8",
 		"eslint": "^9.29.0",
-		"eslint-plugin-svelte": "^3.9.2",
+		"eslint-plugin-svelte": "^3.9.3",
 		"globals": "^16.2.0",
-		"prettier": "^3.5.3",
+		"prettier": "^3.6.0",
 		"prettier-plugin-svelte": "^3.4.0",
 		"publint": "^0.3.12",
-		"svelte": "^5.34.3",
-		"svelte-check": "^4.2.1",
+		"svelte": "^5.34.7",
+		"svelte-check": "^4.2.2",
 		"svelte-eslint-parser": "^1.2.0",
 		"typescript": "^5.8.3",
-		"typescript-eslint": "^8.34.0",
+		"typescript-eslint": "^8.34.1",
 		"vite": "^6.3.5",
-		"vitest": "^3.2.3"
+		"vitest": "^3.2.4"
 	},
 	"peerDependencies": {
 		"svelte": "^5.0.0"
